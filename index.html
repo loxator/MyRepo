@@ -1,51 +1,81 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title> Materialize </title>
+	<title>  Amin Adam Limbada </title>
 	<link rel="stylesheet"  type="text/css" href="css/materialize.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<script type="text/javascript" src = "js/jquery.min.js"></script>
 	<script type="text/javascript" src = "js/materialize.min.js"></script>
-	
-	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="https://github.com/kswedberg/jquery-smooth-scroll/blob/master/jquery.smooth-scroll.min.js"></script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109553529-1"></script>
+	<script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-109553529-1');
+	</script>
+	<script>
+        $('.smooth').on('click', function() {
+            $.smoothScroll({
+                scrollElement: $('body'),
+                scrollTarget: '#' + this.id
+            });
+
+            return false;
+        });
+	</script>
 </head>
 
-<body background="C:\Users\Amin\Pictures\bg.png">
+<body background="http://i.imgur.com/1ySzNYR.png">
 
 
 <div class="col s12 m8 offset-m2 l6 offset-l3">
         <div class="card-panel teal darken-3 z-depth-1">
           <div class="row valign-wrapper">
             <div class="col s3">
-              <img src="C:\Users\Amin\Website\531744_10151322480386817_895452443_n.jpg" alt="" class="circle responsive-img"> 
+              <img src="https://pbs.twimg.com/profile_images/926784337193963520/W7dT0wu5_400x400.jpg" alt="" class="circle responsive-img">
             </div>
             <div class="col s10">
-              <span class="black-text">
-                <font face="Courier New"  size = 24 color="black">DEVELOPER.</font>
-              </span>
-			  <div class = "col s1">
+
+			  <div class = "col s2">
 			  <a href ="https://www.facebook.com/theindianhippy">
-			  <img src="C:\Users\Amin\Website\fb.png" alt="" class="circle responsive-img">
+			  <img src="fb.png" alt="" class="circle responsive-img" height="120" width="120">
 			  </a>
 			  </div>
-			  <div class = "col s1">
+			  <div class = "col s2">
 			  <a href ="https://sg.linkedin.com/in/amin-limbada-8b3a30b7">
-			  <img src="C:\Users\Amin\Website\linkedin.png" alt="" class="circle responsive-img">
+			  <img src="linkedin.png" alt="" class="circle responsive-img" height="120" width="120">
 			  </a>
 			  </div>
-			  
-			  <div class = "col s1">
+
+			  <div class = "col s2">
 			  <a href = "https://twitter.com/theindianhippy">
-			  <img src="C:\Users\Amin\Website\twitter.png" alt="" class="circle responsive-img">
+			  <img src="twitter.png" alt="" class="circle responsive-img" height="120" width="120">
 			  </a>
 			  </div>
-			 <div class = "col s1">
+			 <div class = "col s2">
 			 <a href = "http://stackoverflow.com/users/1368671/loxator">
-			  <img src="C:\Users\Amin\Website\se-icon.png" alt="" class="circle responsive-img">
+			  <img src="se-icon.png" alt="" class="circle responsive-img" height="120" width="120">
+			  </a>
+			  </div>
+				<div class = "col s2">
+			 <a href = "https://github.com/loxator">
+			  <img src="github.png" alt="" class="circle responsive-img" height="120" width="120">
 			  </a>
 			  </div>
             </div>
           </div>
-        </div>
-      </div>
+			<div class="divider"></div>
+			<div class="section">
+				<h5>About Me</h5>
+				<p>Budding front-end developer, usually found tinkering with various web technologies if not working with them. Currently employed at ConSol* MENA where I help in maintaining automated tests and implementing new features using programming languages such as Adobe ColdFusion, Java, Javascript among others!
+				</p>
+			</div>
+			</div>
+		</div>
 </body>
 </html>
