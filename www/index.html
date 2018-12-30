@@ -1,143 +1,219 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>  Amin Adam Limbada </title>
-	<!-- Compiled and minified CSS -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  <title>Amin Limbada - Software Engineer</title>
+  <style type="text/css">
+    header {
+      background: url(../images/coding.gif);
+      background-position: center;
+      background-repeat: repeat-x;
+      background-size: inherit;
+      min-height: 700px;
+      min-width: 800px;
 
-	<!-- Compiled and minified JavaScript -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-	<script src="https://github.com/kswedberg/jquery-smooth-scroll/blob/master/jquery.smooth-scroll.min.js"></script>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-113133194-1"></script>
-	<script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+    }
 
-        gtag('config', 'UA-113133194-1');
-	</script>
-	<script>
-        $('.smooth').on('click', function() {
-            $.smoothScroll({
-                scrollElement: $('body'),
-                scrollTarget: '#' + this.id
-            });
+    .section {
+      padding-top: 3vw;
+      padding-bottom: 4vw;
+    }
 
-            return false;
-        });
-	</script>
+    @media screen and (max-width: 670px) {
+      header {
+        min-height: 500px;
+      }
+    }
+  </style>
 </head>
 
-<body background="http://i.imgur.com/1ySzNYR.png">
+<body>
 
-<!-- Personal Section -->
-<div class="col s12 m8 offset-m2 l6 offset-l3">
-	<div class="card-panel teal darken-3 z-depth-1">
-		<div class="row valign-wrapper">
-			<div class="col s3">
-				<img src="https://pbs.twimg.com/profile_images/926784337193963520/W7dT0wu5_400x400.jpg" alt="" class="circle responsive-img">
-			</div>
-			<div class="col s10">
+  <!-- navbar -->
+  <header>
+    <nav class="nav-wrapper black">
+      </div>
+      <div class="container">
+        <a href="" class="hrand-logo">Amin Limbada </a>
+        <a href="" class="sidenav-trigger" data-target="mobile-menu">
+          <i class="material-icons">menu</i>
+        </a>
+        <ul class="hide-on-med-and-down right">
+          <li><a href="#aboutMe">About Me</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
 
-				<div class = "col s2">
-					<a href ="https://www.facebook.com/theindianhippy">
-						<img src="fb.png" alt="" class="circle responsive-img" height="120" width="120">
-					</a>
-				</div>
-				<div class = "col s2">
-					<a href ="https://sg.linkedin.com/in/amin-limbada-8b3a30b7">
-						<img src="linkedin.png" alt="" class="circle responsive-img" height="120" width="120">
-					</a>
-				</div>
+        <ul class="sidenav grey lighten-2 " id="mobile-menu">
+          <li><a href="#aboutMe">About Me</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 
-				<div class = "col s2">
-					<a href = "https://twitter.com/theindianhippy">
-						<img src="twitter.png" alt="" class="circle responsive-img" height="120" width="120">
-					</a>
-				</div>
-				<div class = "col s2">
-					<a href = "http://stackoverflow.com/users/1368671/loxator">
-						<img src="se-icon.png" alt="" class="circle responsive-img" height="120" width="120">
-					</a>
-				</div>
-				<div class = "col s2">
-					<a href = "https://github.com/loxator">
-						<img src="github.png" alt="" class="circle responsive-img" height="120" width="120">
-					</a>
-				</div>
-			</div>
-		</div>
-
-		<hr>
-
-		<div class="section">
-			<h3 class="center-align">About Me</h3>
-			<p class="flow-text">Budding front-end developer, usually found tinkering with various web technologies if not working with them. Currently employed at ConSol* MENA where I help in maintaining automated tests and implementing new features using programming languages such as Adobe ColdFusion, Java, Javascript among others!
-			</p>
-		</div>
+  <!-- About Me -->
+  <section class="container section" id="aboutMe">
+    <div class="row">
+      <div class="col s12 15">
+        <h2 class="indigo-text text-darken-4">What I do?</h2>
+        <p class="flow-text">
+          Budding front-end developer, usually found tinkering with various web technologies if not working with them.
+          Currently employed at ConsenSys where I mainly use React and other JavaScript frameworks to build user
+          interfaces. </p>
+      </div>
+    </div>
+  </section>
+  <hr />
 
 
-		<hr>
-		<!-- Contact Form -->
-		<div class="row">
-			<h3 class="center-align">Contact Me</h3>
-			<div class="section center-align">
-				<i class="large material-icons">location_on</i>
-				<p class="flow-text">Living in <strong>Dubai</strong></p>
-			</div>
+  <!-- photo / grid -->
 
-			<div class="section center-align">
-				<i class="large material-icons">email</i>
-				<p class="flow-text">aminlimbada94@gmail.com</p>
-			</div>
-			<div class="row ">
-				<form class="col s12 " method="post" action="https://formspree.io/aminlimbada94@gmail.com">
-					<div class="row">
-						<div class="input-field col s6">
-							<input placeholder="First Name" id="first_name" name="first_name" type="text" class="validate">
-						</div>
-						<div class="input-field col s6">
-							<input placeholder="Last Name" id="last_name" name="last_name"  type="text" class="validate">
-						</div>
-					</div>
-					<div class="row">
+  <section class="container section" id="projects">
 
-						<div class="input-field col s12">
-							<input placeholder="Email" id="email" name="email" type="email" class="validate">
-						</div>
-					</div>
 
-					<div class="row">
-						<div class="input-field col s12">
-							<input placeholder="Comment"   id="message" name="comment" type="text" class="validate">
-						</div>
+    <div class="col s12 l6 offset-l1">
+      <h2 class="indigo-text text-darken-4">
+        Restaurant Finder
+      </h2>
+      <p> A simple react app which pings the Zomato API for getting nearyBy restaurants. It's deployed using
+        Heroku.Demo
+        <a href="https://react-food-finder.herokuapp.com/"> here </a> .
+      </p>
+    </div>
 
-					</div>
+    <div class="row">
+      <div class="col s12 ">
+        <img src="../images/reactFood.gif" class="responsive-img materialboxed" />
+      </div>
 
-					<div class="row">
-						<div class="input-field col s12">
-							<button class="btn waves-effect waves-light" type="submit" name="action">Send Email
-								<i class="material-icons right">send</i>
-							</button>
-						</div>
+    </div>
 
-					</div>
+    <hr />
 
-				</form>
+    <div class="col s12 l6 offset-l1">
+      <h2 class="indigo-text text-darken-4">
+        MEAN Authentication App
+      </h2>
+      <p> A demo project to learn how JWT tokens are handled, and creating session aware user profiles / dashboard.
+        It's deployed using Heroku. Demo <a href=" https://floating-reef-44222.herokuapp.com/"> here </a> . </p>
+    </div>
+    <div class="row">
+      <div class="col s12 ">
+        <img src="../images/meanAuthApp.gif" class="responsive-img materialboxed" />
+      </div>
+    </div>
+  </section>
+  <hr />
+  <!-- contact form -->
+  <section class="section container" id="contact">
+    <div class="row">
+      <div class="col s12 l5">
+        <h2 class="indigo-text text-darken-4">Get In Touch</h2>
+      </div>
+      <div class="col s12 l5 offset-l2">
+        <form action="contact-form-handler.php" id="contact-form" method="POST">
+          <div class="input-field">
+            <i class="material-icons prefix">email</i>
+            <input type="email" id="email">
+            <label for="email">Your Email</label>
+          </div>
 
-			</div>
+          <div class="input-field">
+            <i class="material-icons prefix">message</i>
+            <textarea id="message" class="materialize-textarea"></textarea>
+            <label for="message">Your Message</label>
+          </div>
 
-		</div>
+          <div class="input-field center">
+            <button class="btn " onclick="sendMail(); return false">Submit</button>
+          </div>
 
-	</div>
+        </form>
+      </div>
+    </div>
+  </section>
+  <!-- footer -->
 
-</div>
+  <footer class="page-footer grey darken-3">
+    <div class="container">
+      <div class="row">
+        <div class="tab col m2 s2 offset-m2">
+          <a href="https://www.facebook.com/theindianhippy">
+            <img class="circle responsive-img col" height="80" width="80" src="../images/fb.png">
+          </a>
+        </div>
+        <div class="tab col m2 s2">
+          <a href="https://www.linkedin.com/in/amin-limbada/">
+            <img class="circle responsive-img col  " height="80" width="80"" src=" ../images/linkedin.png"> </a> </div>
+              <div class="tab col m2 s2">
+            <a href="https://github.com/loxator">
+              <img class="circle responsive-img col" height="80" width="80" src="../images/github.png">
+            </a>
+        </div>
+        <div class="tab col m2 s2">
+          <a href="https://stackoverflow.com/users/1368671/loxator">
+            <img class="circle responsive-img col" height="80" width="80" src="../images/se-icon.png">
+          </a>
+        </div>
+        <div class="tab col m2 s2">
+          <a href="https://twitter.com/theindianhippy">
+            <img class="circle responsive-img col " height="80" width="80" src="../images/twitter.png">
+          </a>
+        </div>
 
+      </div>
+
+    </div>
+
+
+    </div>
+  </footer>
+
+
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(document).ready(function () {
+        $('.sidenav').sidenav();
+        $('.materialboxed').materialbox();
+        $('.tabs').tabs();
+      })
+    });
+  </script>
+
+  <script type="text/javascript">
+    let anchorlinks = document.querySelectorAll('a[href^="#"]')
+
+    for (let item of anchorlinks) { // relitere 
+      item.addEventListener('click', (e) => {
+        let hashval = item.getAttribute('href')
+        let target = document.querySelector(hashval)
+        target.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        })
+        history.pushState(null, null, hashval)
+        e.preventDefault()
+      })
+    }
+  </script>
 
 </body>
+
+
 </html>
